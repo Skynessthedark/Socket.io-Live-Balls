@@ -1,0 +1,14 @@
+{
+  "name": "socket.io-live-balls",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Skynessthedark <qksnn.9@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Skynessthedark/Socket.io-Live-Balls",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "semantic": "^2.4.1"
+  }
+}
