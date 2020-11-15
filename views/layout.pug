@@ -5,10 +5,12 @@ html
     title= title
     link(rel='stylesheet', href='./public/stylesheets/style.css')
     link(rel='stylesheet', href='/semantic/dist/semantic.min.css')
-  body
+  body(ng-app="app")
     block content
 
 
     block javascripts
-      script("/angular/angular.min.js")
+      script(src= "/angular/angular.min.js")
+      script(src= "/public/javascripts/main.js");
+      script(src= "/public/javascripts/indexController.js");
       
