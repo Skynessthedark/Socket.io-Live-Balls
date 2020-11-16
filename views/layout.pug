@@ -1,16 +1,21 @@
 doctype html
 html
   head
-    meta(charset= "UTF-8")
+    meta(charset='UTF-8')
     title= title
-    link(rel='stylesheet', href='./public/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/semantic/dist/semantic.min.css')
-  body(ng-app="app")
+  body(ng-app="app", ng-cloak)
     block content
 
 
-    block javascripts
-      script(src= "/angular/angular.min.js")
-      script(src= "/public/javascripts/main.js");
-      script(src= "/public/javascripts/indexController.js");
+  block javascripts
+    script(src="/socket.io/socket.io.js")
+    script(src="/angular/angular.min.js")
+    script(src="/jquery/dist/jquery.min.js")
+    script(src="/javascripts/main.js")
+    //script(src="/javascripts/services/configFactory.js")
+    script(src="/javascripts/services/indexFactory.js")
+    script(src="/javascripts/controllers/indexController.js")
+
       
