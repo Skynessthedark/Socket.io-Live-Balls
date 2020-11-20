@@ -1,4 +1,4 @@
-app.controller('indexController', ['$scope', 'indexFactory', ($scope, indexFactory) =>{
+app.controller('indexController', ['$scope', 'indexFactory', 'configFactory', ($scope, indexFactory, configFactory) =>{
 
     $scope.messages = [];
     $scope.players = { };
