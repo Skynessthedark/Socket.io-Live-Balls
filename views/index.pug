@@ -12,9 +12,8 @@ block content
             class="{{player.color}}"
           )
             .relative
-              span.name {{player.username}}
-              |                     
-              .message       
+              span.name {{player.username}}                    
+              .message 
         .ui.items.chat#chat-area
           .item(ng-repeat="message in messages")
             .content(ng-if="!message.type.code")
